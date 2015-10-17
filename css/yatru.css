@@ -24,14 +24,14 @@ body{
 }
 #container_general{
     position: absolute;
-    left: 0;
+    left: 0px;
     top: 270px;
     text-align: center;
     width: 100%;
 }
 #container_recorded{
     position: absolute;
-    left: 0;
+    left: 0px;
     top: 270px;
     text-align: center;
     width: 90%;
