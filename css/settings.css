@@ -1,0 +1,25 @@
+body{
+    color: grey;
+}
+hr{
+    border:none;
+    border-top: 1px solid #f1f1f1;
+    width: 100%;
+    background:white;
+}
+.content{
+    height: 20px;
+    padding: 10px;
+}
+.content:hover{
+    background: #f1f1f1;
+}
+.topic{
+    float: left;
+}
+.option{
+    float: right;
+}
+.modal{
+    height: 420px;
+}

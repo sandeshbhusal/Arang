@@ -1,0 +1,77 @@
+body{
+    overflow-x:hidden;
+    overflow-y: scroll;
+}
+#arright{
+    position: fixed;
+    right: 10px;
+    bottom: 30%;
+    z-index: 101;
+    height: 32px;
+    width: 32px;
+}
+#arleft{
+    transform: rotate(180deg);
+    position: fixed;
+    left: 10px;
+    bottom: 30%;
+    z-index: 101;
+    height: 32px;
+    width: 32px;
+}
+#userImg{
+    margin-top: 20px;
+}
+#container_general{
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+#container_recorded{
+    position: absolute;
+    left: 0;
+    top: 270px;
+    text-align: center;
+    width: 90%;
+    left: 5%;
+    font-size: 13px;
+}
+.text{
+    border:none;
+    background: none;
+    padding: 10px;
+    outline: none;
+    color: grey;
+    text-align: center;
+    width: 200px;
+}
+.small{
+    font-size: 12px;
+}
+.avatar{
+    width: 64px;
+    height:64px;
+    padding: 3px;
+    box-shadow: white 0 0 15px inset;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+a{
+    color: #19afbd;
+    text-decoration: none;
+}
+#settingsBtn{
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    background: none;
+    border-radius: 100%;
+    padding: 5px;
+    padding-top: 6px;
+    transition: background .25s;
+}
+#settingsBtn:hover {
+    background: rgba( 255, 255, 255, .3);
+}

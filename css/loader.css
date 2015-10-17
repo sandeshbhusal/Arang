@@ -1,0 +1,55 @@
+.loader{
+    position: relative;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin: auto;
+}
+.loader span{
+    opacity: 0;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    background: white;
+    border-radius: 100%;
+    top: 0%;
+    left: 0%;
+    
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    -moz-animation-name: loader;
+    -moz-animation-duration: .8s;
+    -moz-animation-iteration-count: infinite;
+    
+    -webkit-animation-name: loader;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-iteration-count: infinite;    
+}
+.loader span:nth-child(1){
+    animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+}
+.loader span:nth-child(0){
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+}
+.loader span:nth-child(2){
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+@-webkit-keyframes loader{
+    from{
+        -webkit-transform: scale(0);
+        opacity: 1;
+    }
+    to{
+        -webkit-transform: scale(1);
+        opacity: 0;
+    }
+}
