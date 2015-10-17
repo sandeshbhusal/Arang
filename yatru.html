@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>आफ्नै यातायात</title>
+        <meta name="viewport" content="width=device-width, height=device-height">
+        <meta charset="utf-8">
+        <link rel = stylesheet href = 'css/yatru.css' />
+        <link rel = stylesheet href = 'css/universal.css' />
+        
+        <script src = 'javascript/app.js' ></script>
+        <script src = 'javascript/jquery-1.11.3.min.js' ></script>
+    </head>
+    <body>
+        <div class = 'blue halfScreen'>
+            <img src = 'imgs/settings.svg' width="32" id = 'settingsBtn' />
+            <br /><br /><br />
+            <img src = 'imgs/avatars/man_6.svg' class = 'avatar' />
+            <br /><br />
+            <div id = 'username'>Sandesh Bhusal</div>
+            <br />
+            <div class = 'selector smallFonts'>
+                <span id = 'newTravel' class = 'selected'>Recorded&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span id = 'recorded'>&nbsp;&nbsp;&nbsp;&nbsp;New Travel</span>
+            </div>
+        </div>
+        <div id = 'container_general' class = 'hidden'>
+            Where to today?
+            <br />
+            <input class = 'text noBorders' placeholder = Destination id = 'destination'  />
+            <br />
+            <br />
+            <div class = 'small'>I am at Maitidevi</div>
+            <a id = 'hoina' href = '#' class = 'small'>Change</a>
+            <br /><br />
+            <div class = 'buttonRounded blue fifty'>
+                Go, Fetch!
+            </div>
+        </div>
+        <div id = 'container_recorded'>
+            Recorded Buses:
+            <hr />
+            No buses recorded till now. Tap the add icon to add a new vehicle to your list! :)
+            <br /><br /><br />
+            <img src = 'imgs/plus.svg' width="32" />
+        </div>
+        <div class = 'modalContainer hidden'>
+            <div class = 'modal '>
+                <div class = 'title'>
+                    Your Current location
+                </div>
+                <input id = 'location' class = 'text' placeholder = 'Type here' />
+                <br /><br />
+                <div class = 'modalButtonStandalone'>
+                    All set.
+                </div>
+            </div>
+        </div>
+        <script src = 'javascript/yatru.js' ></script>
+    </body>
+</html>
