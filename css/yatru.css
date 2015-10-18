@@ -75,3 +75,14 @@ a{
 #settingsBtn:hover {
     background: rgba( 255, 255, 255, .3);
 }
+iframe{
+    border: none;
+    z-index: 101;
+    height:95%;
+    width: 95%;
+    position: fixed;
+    top: -250%;
+    left: 2.5%;
+    background: white;
+    border-radius: 5px;
+}

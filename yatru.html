@@ -41,7 +41,9 @@
             <hr />
             No buses recorded till now. Tap the add icon to add a new vehicle to your list! :)
             <br /><br /><br />
-            <img src = 'imgs/plus.svg' width="32" />
+            <a href = 'addbus.html' target="addBusContainer">
+                <img src = 'imgs/plus.svg' width="32" id = 'addvehicle' />
+            </a>
         </div>
         <div class = 'modalContainer hidden'>
             <div class = 'modal '>
@@ -54,6 +56,9 @@
                     All set.
                 </div>
             </div>
+        </div>
+        <div class = 'modalContainer hidden' id = 'modalContainerIframe'>
+            <iframe id = 'addBusContainer'></iframe>
         </div>
         <script src = 'javascript/yatru.js' ></script>
     </body>

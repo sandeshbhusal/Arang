@@ -12,19 +12,17 @@ $(".selector span").click(function(){
 });
 $("#destination").focusin(function(){
     $(".halfScreen").slideToggle();
-    $("#container_general").animate({"bottom":"50%"}, 250);
+    $("#container_general").animate({"top":"5%"}, 250);
 });
 
 $("#destination").focusout(function(){
     $(".halfScreen").slideToggle();
-    $("#container_general").animate({"bottom":"20px"}, 250);
-});
-$("#username").click(function(){
-    location.assign('settings.html');
-});
-$(".avatar").click(function(){
-    location.assign('settings.html');
+    $("#container_general").animate({"top":"270px"}, 250);
 });
 $("#settingsBtn").click(function(){
     location.assign('settings.html');
+});
+$("#addvehicle").click(function(){
+    $("#modalContainerIframe").fadeIn();
+    $("iframe").animate({"top":"2.5%"}, 250); 
 });
