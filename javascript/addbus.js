@@ -1,3 +1,3 @@
 $("#SPT").change(function(){
-    var x = document.getElementById("SPT");
+    var x = document.getElementById("SPTa");
 });
