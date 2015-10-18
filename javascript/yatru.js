@@ -24,5 +24,5 @@ $("#settingsBtn").click(function(){
 });
 $("#addvehicle").click(function(){
     $("#modalContainerIframe").fadeIn();
-    $("iframe").animate({"top":"2.5%"}, 250); 
+    $("iframe").animate({"left":"0%"}, 250); 
 });

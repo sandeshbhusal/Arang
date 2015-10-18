@@ -78,11 +78,10 @@ a{
 iframe{
     border: none;
     z-index: 101;
-    height:95%;
-    width: 95%;
+    height:100%;
+    width: 100%;
     position: fixed;
-    top: -250%;
-    left: 2.5%;
+    left: 250%;
+    top: 0%;
     background: white;
-    border-radius: 5px;
 }
