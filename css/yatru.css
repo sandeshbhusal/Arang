@@ -1,6 +1,5 @@
 body{
-    overflow-x:hidden;
-    overflow-y: scroll;
+    overflow:hidden;
 }
 #arright{
     position: fixed;
@@ -23,14 +22,18 @@ body{
     margin-top: 20px;
 }
 #container_general{
-    position: absolute;
-    left: 0px;
-    top: 270px;
+    background: white;
+    position: fixed;
+    left: 5%;
+    top: 100%;
     text-align: center;
-    width: 100%;
+    width: 90%;
+    z-index: 99;
 }
 #container_recorded{
-    position: absolute;
+    background: white;
+    z-index: 98;
+    position: fixed;
     left: 0px;
     top: 270px;
     text-align: center;

@@ -56,7 +56,7 @@ body, html, input{
     box-shadow: silver 0 3px 3px;
 }
 .fullscreen{
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     width: 100%;
@@ -69,11 +69,15 @@ body, html, input{
     border-radius: 3px;
 }
 .buttonRounded{
+    height: 24px;
     padding: 6px;
     text-align: center;
     font-weight: lighter;
     border-radius: 100px;
     margin: auto;
+}
+.buttonRounded:hover{
+    
 }
 a{
     text-decoration: none;
@@ -136,6 +140,7 @@ a{
     text-align: center;
     padding-top: 20px;
     font-size: 15px;
+    z-index: 105;
 }
 .modal .title{
     text-align: center;

@@ -5,10 +5,16 @@ $(".modalButtonStandalone").click(function(){
     $(".modalContainer").fadeOut();
 });
 $(".selector span").click(function(){
-    $("#container_general").slideToggle();
+    if($("#recorded").hasClass("selected")){
+        $("#container_general").animate({"top":"100%", "opacity":"0"}, 500);
+        $("#container_recorded").animate({"top":"270px", "opacity":"1"}, 500);
+    }
+    else{
+        $("#container_general").animate({"top":"270px", "opacity":"1"}, 500);
+        $("#container_recorded").animate({"top":"100%", "opacity":"0" }, 500);
+    }
     $("#newTravel").toggleClass("selected");
     $("#recorded").toggleClass("selected");
-    $("#container_recorded").slideToggle();
 });
 $("#destination").focusin(function(){
     $(".halfScreen").slideToggle();
