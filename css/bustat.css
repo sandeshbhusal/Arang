@@ -1,0 +1,7 @@
+.bus_container{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background: #f43b58;
+}
