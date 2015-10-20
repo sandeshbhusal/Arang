@@ -1,6 +1,9 @@
 body, html, input{
     font-family: roboto;
 }
+.tappable:hover{
+    opacity: .9;
+}
 .hidden{
     display: none;
 }

@@ -1,7 +1,16 @@
+body{
+    
+}
 .bus_container{
-    height: 80px;
+    padding: 5px;
+    margin-top: 10px;
+    height: 100px;
     width: 100%;
-    position: absolute;
     left: 0;
     background: #f43b58;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+.smallFonts{    
 }

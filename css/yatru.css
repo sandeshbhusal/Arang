@@ -78,7 +78,7 @@ a{
 #settingsBtn:hover {
     background: rgba( 255, 255, 255, .3);
 }
-iframe{
+.iframe{
     border: none;
     z-index: 101;
     height:100%;
@@ -87,4 +87,12 @@ iframe{
     left: 250%;
     top: 0%;
     background: white;
+}
+.buses{
+    position: fixed;
+    top: 250px;
+    border: none;
+    background: white;
+    left: 0;
+    width: 100%;
 }

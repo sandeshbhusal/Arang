@@ -32,3 +32,6 @@ $("#addvehicle").click(function(){
     $("#modalContainerIframe").fadeIn();
     $("iframe").animate({"left":"0%"}, 250); 
 });
+var x = window.innerHeight - 250;
+var u = x + "px";
+$(".buses").css({"height":u});
