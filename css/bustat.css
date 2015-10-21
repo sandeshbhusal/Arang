@@ -5,11 +5,12 @@ body{
     padding: 5px;
     margin-top: 10px;
     height: 100px;
-    width: 100%;
+    width: 105%;
     left: 0;
-    background: #f43b58;
+    background: #f0f0f0;
     text-align: center;
-    color: white;
+    color: grey;
+    margin-left: -10px;
     font-size: 13px;
 }
 .smallFonts{    

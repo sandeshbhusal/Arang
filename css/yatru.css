@@ -1,22 +1,13 @@
 body{
     overflow:hidden;
 }
-#arright{
+#addvehicle{
     position: fixed;
-    right: 10px;
-    bottom: 30%;
-    z-index: 101;
-    height: 32px;
-    width: 32px;
-}
-#arleft{
-    transform: rotate(180deg);
-    position: fixed;
-    left: 10px;
-    bottom: 30%;
-    z-index: 101;
-    height: 32px;
-    width: 32px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 105;
+    border-radius: 100%;
+    box-shadow: silver 1px 1px 2px;
 }
 #userImg{
     margin-top: 20px;
@@ -89,6 +80,7 @@ a{
     background: white;
 }
 .buses{
+    overflow: hidden;
     position: fixed;
     top: 250px;
     border: none;

@@ -16,10 +16,11 @@ body, html, input{
     text-align: center;
     padding: 10px;
     width: 100%;
+    border-bottom: 2px solid #00a1ff;
 }
 .selector .selected {
-    border-bottom: 2px solid white;
-    transition: border .25s;
+    border-bottom-color: white;
+    transition: border-color .5s;
 }
 .noBorders{
     border: none;
@@ -143,7 +144,7 @@ a{
     text-align: center;
     padding-top: 20px;
     font-size: 15px;
-    z-index: 105;
+    z-index: 1005;
 }
 .modal .title{
     text-align: center;
