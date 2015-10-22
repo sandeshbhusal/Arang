@@ -1,25 +1,11 @@
 body{
     color: grey;
-    text-align: center;
 }
 hr{
     border:none;
     border-top: 1px solid #f1f1f1;
     width: 100%;
     background:white;
-}
-.content{
-    height: 20px;
-    padding: 10px;
-}
-.content:hover{
-    background: #f1f1f1;
-}
-.topic{
-    float: left;
-}
-.option{
-    float: right;
 }
 select{
     background: none;
@@ -31,4 +17,7 @@ select{
 }
 h3{
     margin-top: -1px;
+}
+.container{
+    padding: 4px;
 }

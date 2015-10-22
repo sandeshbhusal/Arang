@@ -1,3 +1,6 @@
 $("#SPT").change(function(){
-    $("#SP").slideDown();
+    var selected = alert($("#SPT :selected").val());
 });
+function appendor(){
+    
+}

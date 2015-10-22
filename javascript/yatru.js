@@ -30,7 +30,7 @@ $("#settingsBtn").click(function(){
 });
 $("#addvehicle").click(function(){
     $("#modalContainerIframe").fadeIn();
-    $("iframe").animate({"left":"0%"}, 250); 
+    $(".iframe").animate({"left":"0%"}, 250); 
 });
 var x = window.innerHeight - 250;
 var u = x + "px";
