@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------
 // (c) Sandesh Bhusal 2015. All Rights Reserved.
 // Licensed Under the GNU General Public License.
-// T&C of the app can be read here at: https://www.sandeshbhusal.com.np/arang/t&c.txt
+// T&C of the app can be read here at: https://www.sandeshbhusal.github.io/arang/t&c.txt
 // Modifying and redistributing allowed with credits of original Author.    
 //-----------------------------------------------------------------------
 var user = {
