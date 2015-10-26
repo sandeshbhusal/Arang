@@ -1,7 +1,3 @@
-$("#SPT").change(function(){
-    var selected = alert($("#SPT :selected").val());
-});
-
 function appendor(childname){
     $("#selector").append("<option>"+childname+"</option>");
 }
@@ -33,6 +29,9 @@ function populate(type){
 
 // All Ajax Sxripts Below this!
 
+var providerType = '';
+var providerName = '';
+
 var SPcoll = new Array();
 SPcoll.push("Trinity International College");
 SPcoll.push("Kathmandu Model College");
@@ -51,4 +50,15 @@ SPpb.push("Madhya Upatyaka Yatayat");
 SPpb.push("Madhyapur Yatayat");
 SPpb.push("Lalitpur Yatayat");
 
-populate('public');
+$("#selector").change(function(){
+    if(!providerType && !providerName){
+        var selected = $("#selector :selected").val();
+        populate(selected);
+        providerType = selected;
+        $("#spt .mediumFonts").text(selected);
+    }
+    else{
+        var selected = $("#selector :selected").val();
+        $("#sp .mediumFonts").text(selected);
+    }
+});
