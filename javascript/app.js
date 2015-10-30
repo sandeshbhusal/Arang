@@ -4,6 +4,8 @@
 // T&C of the app can be read here at: https://www.sandeshbhusal.github.io/arang/t&c.txt
 // Modifying and redistributing allowed with credits of original Author.    
 //-----------------------------------------------------------------------
+
+//Global User settings
 var user = {
     name: localStorage.getItem('userName'),
     password: localStorage.getItem('userKey'),
@@ -22,6 +24,8 @@ var app = {
         }
     }
 }
+
+// App initialization functions
 function init(){
     if(!app.initialized){
         app.name = 'Arang';

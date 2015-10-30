@@ -6,20 +6,19 @@
         <meta charset="utf-8">
         <link rel = stylesheet href = 'css/yatru.css' />
         <link rel = stylesheet href = 'css/universal.css' />
-        <link rel = stylesheet href = 'css/animate.css' />
         
         <script src = 'javascript/app.js' ></script>
         <script src = 'javascript/jquery-1.11.3.min.js' ></script>
     </head>
     <body>
-        <div class = 'blue halfScreen animated'>
-            <img src = 'imgs/settings.png' class = 'animated rollIn' width="24" id = 'settingsBtn' />
+        <div class = 'blue halfScreen'>
+            <img src = 'imgs/settings.svg' width="32" id = 'settingsBtn' />
             <br /><br /><br />
-            <img src = 'imgs/avatars/man_6.svg' class = 'avatar animated zoomIn'/>
+            <img src = 'imgs/avatars/man_6.svg' class = 'avatar' />
             <br /><br />
-            <div id = 'username' class = 'animated zoomIn'>Sandesh Bhusal</div>
+            <div id = 'username'>Sandesh Bhusal</div>
             <br />
-            <div class = 'selector smallFonts animated fadeIn'>
+            <div class = 'selector smallFonts'>
                 <span id = 'newTravel' class = 'selected'>Recorded&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 <span id = 'recorded'>&nbsp;&nbsp;&nbsp;&nbsp;New Travel</span>
             </div>
@@ -39,10 +38,10 @@
         </div>
         <div id = 'container_recorded'>
             <iframe src = "bustat.html" class = 'buses' ></iframe>
-            <img src = 'imgs/plus.svg' width="32" id = 'addvehicle' class = 'animated fadeIn' />
+            <img src = 'imgs/plus.svg' width="32" id = 'addvehicle' />
         </div>
-        <div class = 'modalContainer hidden' id = 'modalContainerLocation'>
-            <div class = 'modal ' style = 'z-index: 200;'>
+        <div class = 'modalContainer hidden'>
+            <div class = 'modal '>
                 <div class = 'title'>
                     Your Current location
                 </div>

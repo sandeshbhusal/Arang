@@ -1,7 +1,8 @@
 document.addEventListener("readystatechange", check(), false);
 
 $(".left").click(function(){
-    location.assign("yatru.html");
+    $("body").fadeOut();
+    setTimeout(location.assign("yatru.html"), 300);
 });
 $("#privacy").click(function(){
     $(".modalContainer").fadeIn();

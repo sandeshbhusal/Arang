@@ -1,5 +1,6 @@
+// Animation functions
 $("#hoina").click(function(){
-    $(".modalContainer").fadeIn();
+    $("#modalContainerLocation").fadeIn();
 });
 $(".modalButtonStandalone").click(function(){
     $(".modalContainer").fadeOut();
@@ -20,19 +21,21 @@ $("#destination").focusin(function(){
     $(".halfScreen").slideToggle();
     $("#container_general").animate({"top":"5%"}, 250);
 });
-
 $("#destination").focusout(function(){
     $(".halfScreen").slideToggle();
     $("#container_general").animate({"top":"270px"}, 250);
 });
 $("#settingsBtn").click(function(){
-    location.assign('settings.html');
+    $("#modalContainerIframe").fadeIn();
+    $(".iframe").attr("src",'settings.html');
+    $(".iframe").animate({"left":"0%"}, 250); 
 });
 $("#addvehicle").click(function(){
     $("#modalContainerIframe").fadeIn();
     $(".iframe").animate({"left":"0%"}, 250); 
 });
 
+//Setting for height fix
 var x = window.innerHeight - 250;
 var u = x + "px";
 $(".buses").css({"height":u});
