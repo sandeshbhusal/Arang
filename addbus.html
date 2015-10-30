@@ -16,12 +16,37 @@
     <div class = 'blue navigatorBar'>
         Add a New Bus
     </div>
-    Add a new vehicle to your Arsenal. :)
-    <input placeholder="Vehicle Code here" />
-    <br /><br /><br />
-    <div class = 'center'>
-        <img src = "imgs/Checked.png" width="32" />
+    <div id = 'defTab'>
+        Add a new vehicle to your Arsenal. :)
+        <input placeholder="Vehicle Code here" />
+        <br /><br /><br />
+        <div class = 'center'>
+            <img src = "imgs/Checked.png" width="32" id = 'check' />
+        </div>
     </div>
+    <div id = 'vehicleTab'>
+        <h3>Vehicle Info</h3>
+        <br />
+        <img src = "imgs/Bus-100.png" width="48" />
+        <table id = 'vInfo'>
+            <tr>
+                <td class = 'detail'>Vehicle No</td>
+                <td> Ba 1 kha 9898</td>
+            </tr>
+            <tr>
+                <td class = 'detail'>Service Of</td>
+                <td> Nepal Yatayat</td>
+            </tr>
+        </table>
+        <br /><br /><br />
+        Vehicle Route:<br /><br />
+        <div class = 'smallFonts'>
+            This vehicle passes through one or more (or all) of the checkpoints mentioned Below:
+        </div>
+        <br />
+        
+    </div>
+    
     <script src="javascript/addbus.js"></script>
 </body>
 </html>

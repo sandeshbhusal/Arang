@@ -1,7 +1,3 @@
-document.addEventListener("readystatechange", start, false);
-function start(){
-    
-}
-function redirect(href){
-    
-}
+$("document").ready(function(){
+    $("#redirect").fadeIn(2000);
+});

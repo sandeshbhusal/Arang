@@ -1,18 +1,18 @@
 .loader{
     position: relative;
     border-radius: 100%;
-    height: 50px;
+    height: 10px;
     width: 50px;
     text-align: center;
     margin: auto;
 }
 .loader span{
     opacity: 0;
-    height: inherit;
-    width: inherit;
+    height: 10px;
+    width: 10px;
     position: absolute;
-    background: white;
     border-radius: 100%;
+    background:red;
     top: 0%;
     left: 0%;
     
@@ -25,31 +25,35 @@
     -moz-animation-iteration-count: infinite;
     
     -webkit-animation-name: loader;
-    -webkit-animation-duration: .8s;
+    -webkit-animation-duration: .5s;
     -webkit-animation-iteration-count: infinite;    
 }
 .loader span:nth-child(1){
-    animation-delay: .2s;
-    -webkit-animation-delay: .2s;
+    animation-delay: .1s;
+    -webkit-animation-delay: .8s;
     -moz-animation-delay: .2s;
-}
-.loader span:nth-child(0){
-    animation-delay: 1.5s;
-    -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
+    left: 0px;
 }
 .loader span:nth-child(2){
-    animation-delay: 1s;
-    -webkit-animation-delay: 1s;
+    background: green;
+    left: 20px;
+    animation-delay: .4s;
+    -webkit-animation-delay: .4s;
     -moz-animation-delay: 1s;
 }
+.loader span:nth-child(3){
+    background: gold;
+    left: 40px;
+    -webkit-animation-delay: .0s;
+}
 @-webkit-keyframes loader{
-    from{
-        -webkit-transform: scale(0);
+    0%{ 
         opacity: 1;
     }
-    to{
-        -webkit-transform: scale(1);
-        opacity: 0;
+    50%{
+        opacity: 0;    
+    }
+    100%{ 
+        opacity: 1;
     }
 }
