@@ -1,3 +1,3 @@
 $("document").ready(function(){
-    $("#redirect").fadeIn(2000);
+    $("#redirect").fadeIn(5000);
 });

@@ -11,7 +11,7 @@ body{
     color: darkslategrey;
     font-size: 2em;
 }
-#splash img{
+#splash #logo{
     margin-top: 80px;
 }
 #redirect{

@@ -6,38 +6,52 @@
         <meta charset="utf-8">
         <link rel = stylesheet href = 'css/setup.css' />
         <link rel = stylesheet href = 'css/universal.css' />
+        <link rel = stylesheet href = 'css/animate.css' />
         
         <script src = 'javascript/app.js'></script>
+        <script src = "javascript/jquery-1.11.3.min.js" ></script>
     </head>
     <body>
         <div class = 'navigatorBar blue'>
-            Please login to your account
+            Set Up a new Account
         </div>
-        <br />
-        <br />
-        <div class = 'smallFonts'>
-            If you are not registered then you can
-            <br />
-            create an account<br />
-            <a href = 'https://www.sandeshbhusal.com/arang/createAccount.php' >Here</a>
+        <div class = 'optionList ' id = 'identityOL'>
+            What is your identity ?
+            <table class = 'select' >
+                <tr>
+                    <td>
+                        <img src = 'imgs/Driver-100.png' width="48" /><br />
+                        Driver
+                    </td>
+                </tr>
+                <tr class = 'spacer'>
+                    <td><hr /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src = 'imgs/Passenger-100.png' width="48" /><br />
+                        Passenger
+                    </td>
+                </tr>
+            </table>
         </div>
-        <br />
-        <form id = 'checker'>
-            <input placeholder="रजिस्टर भएको नाम" />
+        <div class = 'optionList hidden' id = 'userOL'>
             <br />
+            Choose Credentials <br /><br />
+            <img src = "imgs/avatars/man_4.svg" width="64" />
             <br />
-            <input placeholder="तपाईेको पासवर्ड" />
+            <input placeholder = 'Choose Username' />
             <br />
-            <br />
-            <select class = 'orange'>
-                <option>identity</option>
-                <option>Passanger</option>
-                <option>Driver</option>
-            </select>
-            <br />
-            <br />
-            <button class = 'button blue' onclick = 'setup()'>Ok</button>
-        </form>
+            <input placeholder = 'Choose Password' />
+        </div>
+        <div class = 'buttonRounded blue' id = 'nextBtn'>Next</div>
+        <div class = 'modalContainer hidden'>
+            <div class = 'modal'><br />
+                Checking Data...
+                <br /><br />
+                <img src = 'imgs/loading.gif' />
+            </div>
+        </div>
         <script src = 'javascript/setup.js' ></script>
     </body>
 </html>
