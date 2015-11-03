@@ -9,25 +9,20 @@
 var user = {
     name: localStorage.getItem('userName'),
     password: localStorage.getItem('userKey'),
-    type: localStorage.getItem('userType'),
-    destroy: function(){
-        localStorage.setItem('userName') = null;
-        localStorage.setItem('userKey') = null;
-        localStorage.setItem('userType') = null;
-    },
-    setup : function(username, password, type){
-        if(username && password && type){
-            localStorage.setItem('userName') = username;
-            localStorage.setItem('userKey') = password;
-            localStorage.setItem('userType') = type;
-        }
-    }
+    type: localStorage.getItem('userType')
 }
 var app = {
     initialized : false,
     name : "",
+    version : "",
     notifications : "",
-    version : ""
+    setup : function(username, password, type){
+        if(username && password && type){
+            localStorage.setItem('userName') = username;
+            localStorage.setItem('password') = password;
+            localStorage.setItem('type') = type;
+        }
+    }
 }
 
 // App initialization functions

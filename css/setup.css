@@ -28,8 +28,8 @@ body{
     background: white;
     transition: background .5s;
 }
-.select img:hover{
-    background: pink;
+.select .selected{
+    background: lightgreen;
 }
 .spacer{
     height: 10px;

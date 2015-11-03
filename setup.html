@@ -16,12 +16,16 @@
             Set Up a new Account
         </div>
         <div class = 'optionList ' id = 'identityOL'>
+            <div class = 'smallFonts'>
+                Seems like your account has not been set up yet!
+            </div>
+            <br />
             What is your identity ?
             <table class = 'select' >
                 <tr>
                     <td>
-                        <img src = 'imgs/Driver-100.png' width="48" /><br />
-                        Driver
+                        <img src = 'imgs/Passenger-100.png' width="48" id = 'p' /><br />
+                        Passenger
                     </td>
                 </tr>
                 <tr class = 'spacer'>
@@ -29,27 +33,27 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src = 'imgs/Passenger-100.png' width="48" /><br />
-                        Passenger
+                        <img src = 'imgs/Driver-100.png' class = 'selected' width="48" id = 'd' /><br />
+                        Driver
                     </td>
                 </tr>
             </table>
         </div>
         <div class = 'optionList hidden' id = 'userOL'>
             <br />
-            Choose Credentials <br /><br />
+            Enter Credentials <br /><br />
             <img src = "imgs/avatars/man_4.svg" width="64" />
             <br />
-            <input placeholder = 'Choose Username' />
+            <input placeholder = 'Username' id = 'username' />
             <br />
-            <input placeholder = 'Choose Password' />
+            <input placeholder = 'Password' type="password" id = 'password' />
         </div>
         <div class = 'buttonRounded blue' id = 'nextBtn'>Next</div>
         <div class = 'modalContainer hidden'>
             <div class = 'modal'><br />
                 Checking Data...
                 <br /><br />
-                <img src = 'imgs/loading.gif' />
+                <img src = 'imgs/loading.gif' id = 'status' />
             </div>
         </div>
         <script src = 'javascript/setup.js' ></script>
